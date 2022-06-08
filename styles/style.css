@@ -1,9 +1,10 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
 h1{
     text-align: center;
-    font-family: 'arial';
 }
 label{
-    font-family: 'arial';
     font-weight: bold;
 }
 .form{
@@ -19,7 +20,11 @@ input{
     margin-right: -6px;
     background-color: #fdfef7;
     border: #173441 1.8px solid;
+    transition: transform .2s;
 }
+input:hover{
+        transform: scale(1.03);
+    }
 fieldset{
     border: #173441 2px solid;
     border-radius: 10px;
@@ -29,12 +34,17 @@ button{
     background-color: #fdfef7;
     border: #173441 1.8px solid;
     width: 100px;
-    font-family: 'arial';
+    font-weight: 600;
     font-size: 15px;  
     border-radius: 2px;
     padding: 10px;
     margin-left:77%;
-}
+    transform: 1.5;
+    transition: transform .2s;
+    }
+button:hover{
+            transform: scale(1.03);
+        } 
 i{
     background-color: #fdfef7;
     color: rgb(156, 155, 155);
@@ -61,4 +71,8 @@ tr{
 }
 td{
     border: #173441 2px solid;    
+}
+a{
+    text-decoration: none;
+    color: black;
 }

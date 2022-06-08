@@ -3,6 +3,7 @@ function gen_table(){
     let n=Number(document.getElementById("capital").value);
     let n2=Number(document.getElementById("couta").value);
     let n3=Number(document.getElementById("interes").value);
+    const button = document.getElementById("button");
     if(n>0){   
         for(i=1;i<=n2;i++){
             ca=n/n2;
@@ -26,7 +27,16 @@ function gen_table(){
         d5=t_p.toFixed(2);
         document.getElementById("t1").innerHTML=n1;
         document.getElementById("t2").innerHTML=d4;
-        document.getElementById("t3").innerHTML=d5;        
+        document.getElementById("t3").innerHTML=d5;  
+
+        //EVENTO ON CLICK
+        document.getElementById("button").innerHTML = "Gracias por confiar en nuestros servicios";
+        document.getElementById("button").style.color = "white"; 
+        document.getElementById("button").style.backgroundColor = "green"; 
+        document.getElementById("button"); {
+            alert("Accion exitosa")
+        }
+        document.getElementById("buttonReset").innerHTML = FormData;
     }else{
         alert("Falta ingresar un Número");
     }
